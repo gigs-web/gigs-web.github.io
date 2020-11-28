@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+
+<link rel="stylesheet" href="css/presidential_form.css">
+
+<title>Proto</title>
+</head>
+
+<body>
+
+    <form id="regForm" action="">
+        
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+            <h1>Presidential Form:</h1> <h1 class="text-muted text-right">No: 1</h1>
+
+           <p> Party Name: </p>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Choose...</option>
+                  <option value="Nana Addo Dankwa Akufo-Addo" id="option1">NPP</option>
+                  <option value="John Dramani Mahama">NDC</option>
+                  <option value="Christian Kwabena Andrews ">GUM</option>
+                  <option value="Ivor Kobina Greenstreet">CPP</option>
+                  <option value="Madam Akua Donkor">GFP</option>
+                  <option value="Henry Herbert Lartey">GCPP</option>
+                  <option value="Hassan Ayariga">ACP</option>
+                  <option value="Kofi Akpaloo">LPG</option>
+                  <option value="David Apasera">PNC</option>
+                  <option value="Brigitte Dzogbenuku">PPP</option>
+                  <option value="Nana Konadu Agyeman-Rawlings">NDP</option>
+                  <option value="Asiedu Walker">Independent Candidate</option>
+                </select>
+            </div>
+
+            <p> Candidate Name: 
+              <input id="candidateName" placeholder="Candidate Name" oninput="this.className = ''">
+            </p>
+
+            <p> Region: 
+                <input placeholder="Region" oninput="this.className = ''">
+            </p>
+            <p> Constituency: 
+                <input placeholder="Constituency" oninput="this.className = ''">
+            </p>
+
+            <p> Votes:
+                <input placeholder="Votes" oninput="this.className = ''">
+            </p>
+        </div>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+            <h1>Presidential Form:</h1> <h1 class="text-muted text-right">No: 2</h1>
+
+            <p> Party Name: </p>
+             <div class="input-group mb-3">
+                 <select class="custom-select" id="inputGroupSelect01">
+                   <option selected>Choose...</option>
+                   <option value="Nana Addo Dankwa Akufo-Addo" id="option1">NPP</option>
+                   <option value="John Dramani Mahama">NDC</option>
+                   <option value="Christian Kwabena Andrews ">GUM</option>
+                   <option value="Ivor Kobina Greenstreet">CPP</option>
+                   <option value="Madam Akua Donkor">GFP</option>
+                   <option value="Henry Herbert Lartey">GCPP</option>
+                   <option value="Hassan Ayariga">ACP</option>
+                   <option value="Kofi Akpaloo">LPG</option>
+                   <option value="David Apasera">PNC</option>
+                   <option value="Brigitte Dzogbenuku">PPP</option>
+                   <option value="Nana Konadu Agyeman-Rawlings">NDP</option>
+                   <option value="Asiedu Walker">Independent Candidate</option>
+                 </select>
+             </div>
+ 
+             <p> Candidate Name: 
+               <input id="candidateName" placeholder="Candidate Name" oninput="this.className = ''">
+             </p>
+ 
+             <p> Region: 
+                 <input placeholder="Region" oninput="this.className = ''">
+             </p>
+             <p> Constituency: 
+                 <input placeholder="Constituency" oninput="this.className = ''">
+             </p>
+ 
+             <p> Votes:
+                 <input placeholder="Votes" oninput="this.className = ''">
+             </p>
+         </div>
+
+         
+        
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button class="btn btn-primary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        
+        </form>
+
+<script src="js/presidential_form.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
