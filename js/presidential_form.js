@@ -71,7 +71,7 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-/*========Party Names=========*/
+/*=========================Party Names===========================*/
 $("#inputGroupSelect01").change(function ()
     {
         var selectedItem = $(this).val();
@@ -80,5 +80,115 @@ $("#inputGroupSelect01").change(function ()
         {
             $("#candidateName").val(selectedItem);
         }      
-    });    
-/*========Party Names=========*/
+    });  
+    
+$("#inputGroupSelect02").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName2").val(selectedItem);
+        }      
+    });
+
+$("#inputGroupSelect03").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName3").val(selectedItem);
+        }      
+    });
+
+    $("#inputGroupSelect04").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName4").val(selectedItem);
+        }      
+    });  
+    
+$("#inputGroupSelect05").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName5").val(selectedItem);
+        }      
+    });
+
+$("#inputGroupSelect06").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName6").val(selectedItem);
+        }      
+    });
+
+    $("#inputGroupSelect07").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName7").val(selectedItem);
+        }      
+    });  
+    
+$("#inputGroupSelect08").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName8").val(selectedItem);
+        }      
+    });
+
+$("#inputGroupSelect09").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName9").val(selectedItem);
+        }      
+    });
+
+    $("#inputGroupSelect10").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName10").val(selectedItem);
+        }      
+    });  
+    
+$("#inputGroupSelect11").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName11").val(selectedItem);
+        }      
+    });
+
+$("#inputGroupSelect12").change(function ()
+    {
+        var selectedItem = $(this).val();
+
+        if (selectedItem != null && selectedItem != '')
+        {
+            $("#candidateName12").val(selectedItem);
+        }      
+    });
+/*=========================Party Names===========================*/
