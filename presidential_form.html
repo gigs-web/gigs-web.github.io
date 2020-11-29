@@ -13,6 +13,11 @@
 
 <link rel="stylesheet" href="css/presidential_form.css">
 
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+
 <title>Proto</title>
 </head>
 
@@ -38,7 +43,7 @@
             </p>
 
             <p> Region: 
-                <select class="custom-select">
+                <select class="custom-select" id="regions">
                   <option selected>Choose...</option>
                   <option id="region1">Ashanti region </option>
                   <option id="region2">Ahafo region </option>
@@ -67,7 +72,7 @@
             </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -88,7 +93,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -117,7 +122,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -138,7 +143,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -167,7 +172,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -188,7 +193,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -217,7 +222,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -238,7 +243,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -267,7 +272,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -288,7 +293,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -317,7 +322,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -338,7 +343,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -367,7 +372,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -388,7 +393,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -417,7 +422,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -438,7 +443,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -467,7 +472,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -488,7 +493,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -517,7 +522,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -538,7 +543,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -567,7 +572,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
 
@@ -588,7 +593,7 @@
             </p>
 
             <p> Region: 
-              <select class="custom-select">
+              <select class="custom-select" id="regions">
                 <option selected>Choose...</option>
                 <option id="region1">Ashanti region </option>
                 <option id="region2">Ahafo region </option>
@@ -617,7 +622,7 @@
           </p>
 
             <p> Votes:
-                <input placeholder="Votes" oninput="this.className = ''">
+                <input placeholder="Votes" id="votes" oninput="this.className = ''">
             </p>
         </div>
        

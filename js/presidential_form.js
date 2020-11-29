@@ -1,3 +1,15 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyAil2As0b3lhZ1zlq1WkLASYsh_vEGtIpg",
+    authDomain: "electoral-database.firebaseapp.com",
+    databaseURL: "https://electoral-database.firebaseio.com",
+    projectId: "electoral-database",
+    storageBucket: "electoral-database.appspot.com",
+    messagingSenderId: "913717213460",
+    appId: "1:913717213460:web:1dd79336d81e0951e36a01"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 

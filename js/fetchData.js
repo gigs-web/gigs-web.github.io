@@ -134,7 +134,7 @@ function refreshPage(){
 
 
 //Fetch Post from Firebase and Display under post form
-var dbLatest = firebase.database().ref().child("electoralData");
+var dbLatest = firebase.database().ref().child("electoralData").orderByChild("counter");
 
 dbLatest.on("value", function(blogData)
 {
@@ -144,6 +144,7 @@ dbLatest.on("value", function(blogData)
 
         blogData.forEach(function(singleBlog)
         {
+            counter = counter+1;
 
             // Main Card item to fetch post
             blogsHtml += "<div class='col>";
