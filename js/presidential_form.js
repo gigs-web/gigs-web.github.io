@@ -287,10 +287,86 @@ function autocomplete(searchEle, arr) {
     "Asunafo North","Asunafo South","Asutifi North","Tano North","Tano South",
 
     //Bono Region
-    "Banda  Ahenkro",
+    "Banda  Ahenkro","Berekum East","Berekum West","Dormaa East","Dormaa West","Dormaa Central",
+    "Jaman North","Jaman South","Sunyani East","Sunyani West","Tain","Wenchi",
+
+    //Bono East Region 
+    "Atebubu Amantin","Kintampo North","Kintampo South","Nkoranza North","Pru East","Pru West",
+    "Sene East","Sene West","Techiman North","Techiman South",
+
+    //Central Region
+   "Abura-Asebu-Kwamankese","Agona East","Agona West","Ajumako-Enyan-Essiam","Asikuma-Odoben-Brakwa",
+    "Assin North","Assin North","Assin Central","Assin South","Awutu-Senya","Awutu-Senya East",
+    "Awutu-Senya West","Cape Coast","Cape Coast North","Cape Coast South","Effutu","Ekumfi",
+    "Gomoa East","Gomoa Central","Gomoa West","Komenda-Edina-Eguafo-Abirem","Mfantseman East",
+    "Mfantseman West","Hemang Lower Denkyira","Twifo-Atii Morkwaa","Upper Denkyira East","Upper Denkyira West",
+
+    //Eastern Region
+    "Akropong","Akuapem South","Okere","Asuogyaman","Atiwa","Atiwa East","Atiwa West","Ayensuano","Akim Oda",
+    "Asene Akroso-Manso","Abirem","Akim Swedru","Achiase","Akim Abuakwa North","Akim Abuakwa South",
+    "Fanteakwa North","Fanteakwa South","Akwatia","Kade","Abetifi","Afram Plains North","Afram Plains South",
+    "Mpraeso","Nkawkaw","Lower Manya Krobo","New Juaben North","New Juaben South","Nsawam - Adoagyiri",
+    "Suhum","Upper Manya","Lower West Akim","Upper West Akim","Yilo Krobo",
+
+    //Greater Accra Region 
+    "Ablekuma Central","Ablekuma North","Ablekuma South","Ablekuma West","Ayawaso Central","Ayawaso East","Ayawaso North",
+    "Ayawaso West Wuogon","Dade Kotopon","Domeabra-Obom","Korle Klottey","Odododiodoo","Okaikwei North",
+    "Okaikwei Central","Okaikwei South","Adenta","Ashaiman","Ada","Sege","Ningo-Prampram",
+    "Madina","Abokobi-Madina","Dome-Kwabenya","Trobu-Amasaman","Trobu","Amasaman","Weija",
+    "Weija-Gbawe","Bortianor-Ngleshie-Amanfrom","Anyaa-Sowutuom","Krowor","Ledzokuku","Kpone-Katamanso", 
+    "Shai-Osudoku","Tema East","Tema Central","Tema West",
+
+    //Northern East  Region
+    "Bunkpurugu","Yunyoo","Chereponi","Nalerigu Gambaga","Kumbungu","Damango-Daboya",
+    "Daboya-Mankarigu","Walewale","Yagaba-Kubor",
+
+    //Savannah Region 
+    "Bole bamboi","Yapei-Kusawgu","Salaga North","Salaga South","Daboya","Sawla Tuna Klaba",
+
+    //Northern Region 
+    "Gushegu","Karaga","Kpandai","Kumbungu","Bimbilla","Wulensi","Mion","Saboba","Nanton", 
+    "Savelugu","Sagnarigu","Tamale Central","Tamale North","Tamale South","Tolon","Damango", 
+    "Tatale-Sanguli","Yendi","Zabzugu",
+
+    //Upper East Region 
+    "Bawku Central","Binduri","Pusiga","Zebilla","Bolgatanga Central","Bolgatanga East",
+    "Bongo","Builsa North","Builsa South","Tempane","Garu", "Tempane","Chiana-Paga",
+    "Navrongo Central","Nabdam", "Talensi",
+
+    //Upper West Region 
+    "Jirapa","Lambussie","Lawra-Nandom","Lawra","Nandom","Nadowli East","Nadowli West",
+    "Sissala East","Sissala West","Wa East","Wa Central","Wa West",
+
+    //Volta Region
+    "Adaklu","Afadjato South","Agotime-Ziope","Akatsi North","Akatsi South","Ho Central",
+    "Ho West","Hohoe South","Anlo","Keta","Ketu North","Ketu South","Kpando","Central Tongu",
+    "North Tongu","North Dayi","South Dayi","South Tongu",
+
+    //Oti Region
+    "Biakoye","Buem","Akan","Krachi East","Krachi West","Krachi Nchumuru","Nkwanta North","Nkwanta South",
+
+    //Western Region 
+    "Amenfi Central","Amenfi East","Ahanta West","Ellembelle","Jomoro","Mpohor-Wassa East",
+    "Mpohor Wassa East","Evalue-Gwira","Prestea-Huni Valley","Effia-Kwesimintsim","Effia",
+    "Kwesimintsim","Essikado-Ketan","Sekondi","Takoradi","Shama","Tarkwa-Nsuaem","Amenfi East","Amenfi West", 
     
+    //Western North Region 
+    "Aowin","Bia East","Bia West","Bibiani-Anhwiaso-Bekwai","Bodi","Juabeso",
+    "Sefwi-Akontombra","Sefwi Wiawso","Suaman",
+
 ];
  autocomplete(document.getElementById("constituency"), constituencies);
+ autocomplete(document.getElementById("constituency2"), constituencies);
+ autocomplete(document.getElementById("constituency3"), constituencies);
+ autocomplete(document.getElementById("constituency4"), constituencies);
+ autocomplete(document.getElementById("constituency5"), constituencies);
+ autocomplete(document.getElementById("constituency6"), constituencies);
+ autocomplete(document.getElementById("constituency7"), constituencies);
+ autocomplete(document.getElementById("constituency8"), constituencies);
+ autocomplete(document.getElementById("constituency9"), constituencies);
+ autocomplete(document.getElementById("constituency10"), constituencies);
+ autocomplete(document.getElementById("constituency11"), constituencies);
+ autocomplete(document.getElementById("constituency12"), constituencies);
 
 
 /*=========================PRegions & Const ===========================*/
