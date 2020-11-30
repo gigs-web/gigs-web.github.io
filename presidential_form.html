@@ -72,7 +72,7 @@
             </p>
 
             <p> Votes:
-                <input placeholder="Votes" id="votes" oninput="this.className = ''">
+                <input type="number" placeholder="Votes" id="votes" oninput="this.className = ''" autocomplete="off">
             </p>
         </div>
 
@@ -634,6 +634,8 @@
             <button class="btn btn-primary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
             <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
           </div>
+
+          <!--<button class="btn btn-success" type="button" id="submitnpp">Submit</button>-->
         </div>
         
         <!-- Circles which indicates the steps of the form: -->

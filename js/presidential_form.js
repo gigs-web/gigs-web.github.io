@@ -384,8 +384,14 @@ function autocomplete(searchEle, arr) {
 /*=========================PRegions & Const ===========================*/
 
 //Post Presidential Data
-$("#submitAllBtn").click(function()
+$("#submitnpp").click(function()
 {
+    var name = $("#inputGroupSelect01").val();
+    var Cname = $("#candidateName").val();
+    var regions = $("#regions").val();
+    var constituency = $("#constituency").val();
+    var votes = $("#votes").val();
+
     var databaseRef = firebase.database().ref("presidentialData");
 
     databaseRef.once("value").then(function(snapshot)
@@ -394,12 +400,13 @@ $("#submitAllBtn").click(function()
 
             blogData.push().set({
 
-                partyName:$('#option1').val(),
-                candidateName:$('#candidateName').val(),
-                region:$('#regions').val(),
-                constituency:$('#constituency').val(),
-                votes:$('#votes').val()
+                party: name,
+                candidateName: Cname,
+                region: regions,
+                constituency: constituency,
+                votes: votes
             });
 
     });
 });
+
