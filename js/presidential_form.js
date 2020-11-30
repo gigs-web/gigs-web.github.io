@@ -382,3 +382,24 @@ function autocomplete(searchEle, arr) {
 
 
 /*=========================PRegions & Const ===========================*/
+
+//Post Presidential Data
+$("#submitAllBtn").click(function()
+{
+    var databaseRef = firebase.database().ref("presidentialData");
+
+    databaseRef.once("value").then(function(snapshot)
+    {
+        var blogData = firebase.database().ref().child('presidentialData');
+
+            blogData.push().set({
+
+                partyName:$('#option1').val(),
+                candidateName:$('#candidateName').val(),
+                region:$('#regions').val(),
+                constituency:$('#constituency').val(),
+                votes:$('#votes').val()
+            });
+
+    });
+});
