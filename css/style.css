@@ -2,8 +2,8 @@
 #nav-logo {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 70%;
-  margin-left: 10%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 /* The side navigation menu */
@@ -45,16 +45,16 @@
 }
 
 #nav-links:hover {
-  color: cornflowerblue;
+  color: rgb(75, 192, 51);
 }
 
 #menu:hover {
-  color: cornflowerblue;
+  color: rgb(75, 192, 51);
 }
 
 /* Active/current link */
 .sidebar #nav-links.active {
-  background-color: cornflowerblue;
+  background-color: rgb(75, 192, 51);
   color: white;
 }
 
